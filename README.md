@@ -64,6 +64,7 @@ Make sure you have installed:
 
 ```bash
 git clone <YOUR_REPO_URL>
+git clone https://github.com/youssefaittmilla/Fullstack-car-management-ai
 cd fullstack-car-management-ai
 ```
 
