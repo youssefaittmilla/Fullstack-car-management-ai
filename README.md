@@ -74,8 +74,8 @@ cd fullstack-car-management-ai
 ### 🪟 Windows (CMD / PowerShell)
 
 ```bash
-cd backend
-mvnw clean package -DskipTests
+cd demo
+.\mvnw.cmd clean package -DskipTests
 ```
 
 ### 🐧 Linux / Mac
@@ -83,23 +83,37 @@ mvnw clean package -DskipTests
 ```bash
 cd backend
 ./mvnw clean package -DskipTests
-```
+``` creer un fichier .env 
+echo MYSQL_HOST=mysqldb
+echo MYSQL_USER=root
+echo MYSQL_PASSWORD=root
+echo MYSQL_PORT=3306
+echo GROQ_API_KEY=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
+) > .env
 
+
+cat <<EOF > .env
+MYSQL_HOST=mysqldb
+MYSQL_USER=root
+MYSQL_PASSWORD=root
+MYSQL_PORT=3306
+GROQ_API_KEY=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
 ---
-
+ouvrir le fichier docker-compose.yaml
+ajouter l cle de l api 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
 ## 🐳 Run with Docker
 
 ### 🪟 Windows
 
 ```bash
-cd ..
+
 docker-compose up --build
 ```
 
 ### 🐧 Linux / Mac
 
 ```bash
-cd ..
+
 docker compose up --build
 ```
 
