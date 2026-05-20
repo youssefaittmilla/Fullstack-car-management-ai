@@ -101,6 +101,7 @@ MYSQL_USER=root
 MYSQL_PASSWORD=root
 MYSQL_PORT=3306
 GROQ_API_KEY=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
+EOF
 ---
 ouvrir le fichier docker-compose.yaml
 ajouter l cle de l api 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
