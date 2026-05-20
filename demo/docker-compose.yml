@@ -1,0 +1,36 @@
+services:
+  springboot-app:
+    image: springboot-app
+    restart: always
+    build: .
+    ports:
+      - 9090:8082
+    environment:
+      MYSQL_HOST: mysqldb
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
+      MYSQL_PORT: 3306
+      GROQ_API_KEY: ${GROQ_API_KEY}
+    depends_on:
+      - mysqldb
+
+  mysqldb:
+    container_name: mysqldb
+    image: mysql
+    ports:
+      - 3307:3306
+    environment:
+      MYSQL_DATABASE: miola
+      MYSQL_ROOT_PASSWORD: root
+    volumes:
+      - pgdata:/var/lib/mysql
+
+  frontend:
+    build: ./src/main/reactjs
+    ports:
+      - 3000:80
+    depends_on:
+      - springboot-app
+
+volumes:
+  pgdata:
