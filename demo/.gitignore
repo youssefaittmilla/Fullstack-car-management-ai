@@ -32,7 +32,7 @@ build/
 # ======================
 # INTELLIJ IDEA
 # ======================
-.idea
+.idea/
 *.iws
 *.iml
 *.ipr
@@ -52,10 +52,13 @@ build/
 .vscode/
 
 # ======================
+# FRONTEND (React)
+# ======================
+node_modules/
+dist/
+
+# ======================
 # OS FILES
 # ======================
 .DS_Store
 Thumbs.db
-# FRONTEND (React)
-node_modules/
-dist/
