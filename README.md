@@ -82,7 +82,7 @@ cd demo
 ### 🐧 Linux / Mac
 
 ```bash
-cd backend
+cd demo
 ./mvnw clean package -DskipTests
 ``` creer un fichier .env 
 echo MYSQL_HOST=mysqldb
