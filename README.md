@@ -74,18 +74,6 @@ cd fullstack-car-management-ai
 
 ### 🪟 Windows (CMD / PowerShell)
 
-```bash
-cd demo
-.\mvnw.cmd clean package -DskipTests
-```
-
-### 🐧 Linux / Mac
-
-```bash
-cd demo
-Si erreur “permission denied”
-chmod +x mvnw
-./mvnw clean package -DskipTests
 ``` creer un fichier .env 
 echo MYSQL_HOST=mysqldb
 echo MYSQL_USER=root
@@ -93,7 +81,7 @@ echo MYSQL_PASSWORD=root
 echo MYSQL_PORT=3306
 echo GROQ_API_KEY=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
 ) > .env
-
+### 🐧 Linux / Mac
 
 cat <<EOF > .env
 MYSQL_HOST=mysqldb
