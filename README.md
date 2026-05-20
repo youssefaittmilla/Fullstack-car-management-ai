@@ -74,7 +74,7 @@ cd fullstack-car-management-ai
 
 ### 🪟 Windows (CMD / PowerShell)
 
-``` creer un fichier .env 
+```creer un fichier .env 
 echo MYSQL_HOST=mysqldb
 echo MYSQL_USER=root
 echo MYSQL_PASSWORD=root
