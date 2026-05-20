@@ -83,6 +83,8 @@ cd demo
 
 ```bash
 cd demo
+Si erreur “permission denied”
+chmod +x mvnw
 ./mvnw clean package -DskipTests
 ``` creer un fichier .env 
 echo MYSQL_HOST=mysqldb
